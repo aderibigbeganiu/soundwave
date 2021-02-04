@@ -3,26 +3,7 @@ body {
 }
 
 .nav {
-    display: inline;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-}
-
-
-.nav li a{
-    text-decoration: none;
-    color: #FFFFFF;
-    margin: 20px;
-    font-size: 24px;
-}
-
-.nav li a:hover{
-    text-decoration: none;
-    color: #b1b0bb;
-    margin: 20px;
-    font-size: 24px;
 }
 
 .logo {
@@ -35,22 +16,71 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    line-height: 45px;
     display: flex;
     align-items: center;
-    text-align: center;
     color: #FFFFFF;
     text-decoration: none;
 }
 
-.nav-list {
-    list-style: none;
-    margin-left: auto;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
+@media only screen and (max-width: 768px) {
+    .navcontainer {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
 }
 
-.nav-item {
-    display: inline;
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    list-style: none;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 70px;
+    width: 100%;
+    padding: 12px 0px;
+}
+
+.dropdown-content .nav-item{
+    list-style: none;
+    font-family: Poppins;
+    text-align: center;
+}
+
+.dropdown-content .nav-item a{
+    text-decoration: none;
+    color: #fff;}
+
+.dropdown-content .nav-item a:hover{
+    text-decoration: none;
+    color: #b1b0bb;
 }
