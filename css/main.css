@@ -4,6 +4,7 @@ body {
 
 .nav {
     display: flex;
+    margin: 0 20px;
 }
 
 .logo {
@@ -12,15 +13,14 @@ body {
 }
 
 .brand a {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
     display: flex;
     align-items: center;
+    font-family: Poppins;
+    font-size: 30px;
     color: #FFFFFF;
     text-decoration: none;
 }
+
 
 @media only screen and (max-width: 768px) {
     .navcontainer {
@@ -50,37 +50,56 @@ body {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
     }
+    .dropdown {
+        position: absolute;
+        right: 10px;
+        display: inline-block;
+        margin-left: auto;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        list-style: none;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 70px;
+        width: 100%;
+        padding: 12px 0px;
+        font-family: Poppins;
+        font-size: 30px;
+    }
+    
+    .nav-item{
+        text-decoration: none;
+        color: #fff;
+        display: block;
+    }
+    
+    .nav-item:hover{
+        text-decoration: none;
+        color: #b1b0bb;
+    }
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
-    margin-left: auto;
+    margin-right: auto;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    list-style: none;
-    text-align: center;
-    left: 0;
-    right: 0;
-    top: 70px;
-    width: 100%;
-    padding: 12px 0px;
+    margin-top: 12px;
 }
 
-.dropdown-content .nav-item{
-    list-style: none;
-    font-family: Poppins;
-    text-align: center;
-}
-
-.dropdown-content .nav-item a{
+.nav-item{
     text-decoration: none;
-    color: #fff;}
+    font-family: poppins;
+    color: #fff;
+    font-size: 30px;
+    margin: 10px;
+}
 
-.dropdown-content .nav-item a:hover{
+.nav-item:hover{
     text-decoration: none;
     color: #b1b0bb;
 }

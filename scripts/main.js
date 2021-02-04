@@ -1,6 +1,7 @@
 function navToggle(x) {
 	x.classList.toggle("change");
-	document.getElementById("dropdown-content").style.display === "block"
-		? (document.getElementById("dropdown-content").style.display = "none")
-		: (document.getElementById("dropdown-content").style.display = "block");
+	const drpdwn = document.getElementById("dropdown-content");
+	drpdwn.style.display === "block"
+		? (drpdwn.style.display = "")
+		: (drpdwn.style.display = "block");
 }
