@@ -4,29 +4,32 @@ body {
 
 .nav {
     display: flex;
-    margin: 0 20px;
+    margin: 30px 150px 0;
 }
 
 .logo {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
 .brand a {
     display: flex;
     align-items: center;
     font-family: Poppins;
-    font-size: 30px;
+    font-size: 20px;
     color: #FFFFFF;
     text-decoration: none;
 }
 
 
 @media only screen and (max-width: 768px) {
+    .nav {
+        display: flex;
+        margin: 10px 10px 0;
+    }
     .navcontainer {
         display: inline-block;
         cursor: pointer;
-        margin-top: 10px;
     }
 
     .bar1, .bar2, .bar3 {
@@ -68,7 +71,7 @@ body {
         width: 100%;
         padding: 12px 0px;
         font-family: Poppins;
-        font-size: 30px;
+        font-size: 20px;
     }
     
     .nav-item{
@@ -88,14 +91,14 @@ body {
 }
 
 .dropdown-content {
-    margin-top: 12px;
+    margin-top: 5px;
 }
 
 .nav-item{
     text-decoration: none;
     font-family: poppins;
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
     margin: 10px;
 }
 
